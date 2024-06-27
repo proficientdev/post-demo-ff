@@ -6,16 +6,7 @@ export default function CommentCard({ item, width }) {
   return (
     <View style={[styles.card, { width: width * 0.85 }]}>
       <View>
-        <View
-          style={{
-            width: 50,
-            height: 50,
-            borderRadius: 50,
-            backgroundColor: "#fc0394",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <View style={style.cardHeader}>
           <Text style={{ color: "#fff", fontWeight: "700" }}>
             {(item.name.charAt(0) + item.name.charAt(1)).toUpperCase()}
           </Text>
@@ -61,5 +52,13 @@ const styles = StyleSheet.create({
   comment: {
     marginLeft: 10,
     width: "80%",
+  },
+  cardHeader: {
+    width: 50,
+    height: 50,
+    borderRadius: 50,
+    backgroundColor: "#fc0394",
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
