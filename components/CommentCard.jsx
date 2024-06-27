@@ -6,7 +6,7 @@ export default function CommentCard({ item, width }) {
   return (
     <View style={[styles.card, { width: width * 0.85 }]}>
       <View>
-        <View style={style.cardHeader}>
+        <View style={styles.cardHeader}>
           <Text style={{ color: "#fff", fontWeight: "700" }}>
             {(item.name.charAt(0) + item.name.charAt(1)).toUpperCase()}
           </Text>
